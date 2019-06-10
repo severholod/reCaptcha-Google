@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reCapthca</title>
+	<script src="https://www.google.com/recaptcha/api.js?onload=reCapthcaRender" async defer></script>
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+	<div class="form-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="form-wrap">
+						<div class="form-title">Первая форма</div>
+						<!-- /.form-title -->
+						<form class="form first-form" action="form.php" method="POST" id="form">
+							<label for="">Имя</label>
+							<input type="text" name="name"><br><br>
+							<label for="">Телефон<sup>*</sup></label>
+							<input type="text" name="phone"><br><br>
+							<div class="reCaptcha" id="reCaptcha-1"></div>
+							<button type="submit">Заказать звонок</button>
+							<div class="error"></div>
+							<div class="success"></div>
+						</form>
+					</div>
+					<!-- /.form-wrap -->
+				</div>
+				<!-- /.col-6 -->
+				<div class="col-6">
+					<div class="form-wrap">
+						<div class="form-title">Вторая форма</div>
+						<!-- /.form-title -->
+						<form class="form second-form" action="form.php" method="POST" id="form">
+							<label for="">Имя</label>
+							<input type="text" name="name"><br><br>
+							<label for="">Телефон<sup>*</sup></label>
+							<input type="text" name="phone"><br><br>
+							<div class="reCaptcha" id="reCaptcha-2"></div>
+							<button type="submit">Заказать звонок</button>
+							<div class="error"></div>
+							<div class="success"></div>
+						</form>
+					</div>
+					<!-- /.form-wrap -->
+				</div>
+				<!-- /.col-6 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.form-section -->
+	
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>
